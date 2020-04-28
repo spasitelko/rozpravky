@@ -1,14 +1,31 @@
-
-
+html {
+  font-size: 18px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(20px + 6 * ((200vw - 320px) / 680));
+    margin: 5%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 body {
   font-family: Lato, sans-serif;
   text-align: center;
+
 }
 
 h1 {
   color: #ffc107;
   font-weight: 900;
+
+
+
+
 
 }
 .navbar-toggler-icon {
@@ -128,7 +145,7 @@ margin: 20px;
 }
 
 
-}
+
 .footer {
   background-color: #eb4559;
   text-align: center;
@@ -144,7 +161,7 @@ color: #000;
 
 
 .footer-info {
-  font-size: 14px;
+
   font-style: italic;
 
 }
@@ -156,7 +173,12 @@ color: #000;
 
 
 .navbar-nav{
-  padding-left: 600px;
+  padding-left: 60%;
 
 
+}
+
+
+.text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
 }
